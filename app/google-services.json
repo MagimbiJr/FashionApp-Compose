@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "596464197133",
+    "project_id": "fashionappcompose",
+    "storage_bucket": "fashionappcompose.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:596464197133:android:7ad1e401e390b1f1a6bf44",
+        "android_client_info": {
+          "package_name": "com.tana.fashionappcompose"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "596464197133-m198f6nf864nc0g141ln8ooq6goksmmp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC5IYmlNZpWZq9dbztLgKvJp0X0d01avl0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "596464197133-m198f6nf864nc0g141ln8ooq6goksmmp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
