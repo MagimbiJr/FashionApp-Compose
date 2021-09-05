@@ -6,18 +6,32 @@ import androidx.navigation.NavType
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.navArgument
+import com.google.accompanist.pager.ExperimentalPagerApi
+import com.google.accompanist.pager.PagerState
 import com.tana.fashionappcompose.components.Screens
+import com.tana.fashionappcompose.components.TabItems
+import com.tana.fashionappcompose.screens.home.HomeScreen
+import kotlinx.coroutines.CoroutineScope
 
+@OptIn(ExperimentalPagerApi::class)
 @Composable
 fun FashionAppNavGraph(
-    navController: NavHostController
+    navController: NavHostController,
+    pagerState: PagerState,
+    pages: List<TabItems>,
+    coroutineScope: CoroutineScope
 ) {
     NavHost(
         navController = navController,
         startDestination = Screens.MainScreen.route
     ) {
         composable(Screens.MainScreen.route) {
-
+            HomeScreen(
+                navController = navController,
+                pagerState = pagerState,
+                pages = pages,
+                coroutineScope = coroutineScope
+            )
         }
         composable(
             "${Screens.DetailScreen.route}/{name}/{city}/{photo}/{bio}",
